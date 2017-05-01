@@ -1,4 +1,4 @@
-## Notes on Cloudera documentation
+## Notes on Cloudera documentation for Santosh
 
 * Cloudera documentation is [available online](http://www.cloudera.com/documentation.html) in HTML and PDF format.
 * The current release is C5.9

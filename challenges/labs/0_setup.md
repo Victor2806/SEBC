@@ -112,3 +112,138 @@ tmpfs           7.4G     0  7.4G   0% /dev/shm
 [root@ip-172-31-44-153 ~]#
 
 
+
+
+
+
+Node 1:
+
+[root@ip-172-31-12-156 ~]# yum repolist enabled
+Loaded plugins: fastestmirror, presto
+Loading mirror speeds from cached hostfile
+ * base: mirrors.sonic.net
+ * extras: mirrors.unifiedlayer.com
+ * updates: mirrors.sonic.net
+base                                                                                                                                             | 3.7 kB     00:00
+cloudera-manager                                                                                                                                 |  951 B     00:00
+extras                                                                                                                                           | 3.4 kB     00:00
+updates                                                                                                                                          | 3.4 kB     00:00
+repo id                                                                  repo name                                                                                status
+base                                                                     CentOS-6 - Base                                                                          6,706
+cloudera-manager                                                         Cloudera Manager, Version 5.11.0                                                             7
+extras                                                                   CentOS-6 - Extras                                                                           64
+updates                                                                  CentOS-6 - Updates                                                                         252
+repolist: 7,029
+[root@ip-172-31-12-156 ~]#
+
+
+Node 2:-
+
+[root@ip-172-31-42-229 ~]# yum repolist enabled
+Loaded plugins: fastestmirror, presto
+
+base                                                                                                                                             | 3.7 kB     00:00
+base/primary_db                                                                                                                                  | 4.7 MB     00:01
+extras                                                                                                                                           | 3.4 kB     00:00
+extras/primary_db                                                                                                                                |  37 kB     00:00
+updates                                                                                                                                          | 3.4 kB     00:00
+updates/primary_db                                                                                                                               | 803 kB     00:00
+repo id                                                                    repo name                                                                              status
+base                                                                       CentOS-6 - Base                                                                        6,706
+extras                                                                     CentOS-6 - Extras                                                                         64
+updates                                                                    CentOS-6 - Updates                                                                       252
+repolist: 7,022
+[root@ip-172-31-42-229 ~]#
+[root@ip-172-31-42-229 ~]#
+
+
+Node 3:
+
+[root@ip-172-31-39-197 ~]# yum repolist enabled
+Loaded plugins: fastestmirror, presto
+
+base                                                                                                                                             | 3.7 kB     00:00
+base/primary_db                                                                                                                                  | 4.7 MB     00:01
+extras                                                                                                                                           | 3.4 kB     00:00
+extras/primary_db                                                                                                                                |  37 kB     00:00
+updates                                                                                                                                          | 3.4 kB     00:00
+updates/primary_db                                                                                                                               | 803 kB     00:01
+repo id                                                                    repo name                                                                              status
+base                                                                       CentOS-6 - Base                                                                        6,706
+extras                                                                     CentOS-6 - Extras                                                                         64
+updates                                                                    CentOS-6 - Updates                                                                       252
+repolist: 7,022
+[root@ip-172-31-39-197 ~]#
+[root@ip-172-31-39-197 ~]#
+
+
+Node 4:
+
+[root@ip-172-31-36-127 ~]# yum repolist enabled
+
+Loaded plugins: fastestmirror, presto
+base                                                     | 3.7 kB     00:00
+base/primary_db                                          | 4.7 MB     00:01
+extras                                                   | 3.4 kB     00:00
+extras/primary_db                                        |  37 kB     00:00
+updates                                                  | 3.4 kB     00:00
+updates/primary_db                                       | 803 kB     00:00
+repo id                        repo name                                  status
+base                           CentOS-6 - Base                            6,706
+extras                         CentOS-6 - Extras                             64
+updates                        CentOS-6 - Updates                           252
+repolist: 7,022
+[root@ip-172-31-36-127 ~]#
+[root@ip-172-31-36-127 ~]#
+
+
+Node 5:
+
+
+[root@ip-172-31-44-153 ~]# yum repolist enabled
+Loaded plugins: fastestmirror, presto
+
+base                                                     | 3.7 kB     00:00
+base/primary_db                                          | 4.7 MB     00:01
+extras                                                   | 3.4 kB     00:00
+extras/primary_db                                        |  37 kB     00:00
+updates                                                  | 3.4 kB     00:00
+updates/primary_db                                       | 803 kB     00:00
+repo id                        repo name                                  status
+base                           CentOS-6 - Base                            6,706
+extras                         CentOS-6 - Extras                             64
+updates                        CentOS-6 - Updates                           252
+repolist: 7,022
+[root@ip-172-31-44-153 ~]#
+[root@ip-172-31-44-153 ~]#
+
+-----------------
+groupadd aussies
+groupadd kiwis
+
+
+useradd -g aussies -u 2300 cate 
+useradd -g kiwis -u 2900 jemaine
+
+cate:x:2300:2901::/home/cate:/bin/bash
+
+
+[root@ip-172-31-12-156 ~]# tail -2 /etc/passwd
+cate:x:2300:2901::/home/cate:/bin/bash
+jemaine:x:2900:2902::/home/jemaine:/bin/bash
+[root@ip-172-31-12-156 ~]#
+
+
+[root@ip-172-31-12-156 ~]# tail -2 /etc/group
+aussies:x:2901:
+kiwis:x:2902:
+[root@ip-172-31-12-156 ~]#
+
+
+
+
+jemaine:x:2900:2902::/home/jemaine:/bin/bash
+[root@ip-172-31-12-156 ~]# cat /etc/passwd
+ 
+
+

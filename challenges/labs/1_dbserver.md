@@ -96,3 +96,34 @@ grant all on amon.* TO 'sentry'@'%' IDENTIFIED BY 'sentry';
  
 ----------------------
 
+
+Hostname of DB hub 
+
+[root@ip-172-31-12-156 ~]# hostname -f
+ip-172-31-12-156.us-west-2.compute.internal
+[root@ip-172-31-12-156 ~]#
+
+ec2-52-39-69-132.us-west-2.compute.amazonaws.com  52.39.69.132
+
+
+---------
+
+
+mysql> version
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'version' at line 1
+mysql> show version;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'version' at line 1
+mysql> Select @@version
+    -> ;
++-----------+
+| @@version |
++-----------+
+| 5.1.73    |
++-----------+
+1 row in set (0.00 sec)
+
+mysql>
+
+
+

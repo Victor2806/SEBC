@@ -1,3 +1,4 @@
+```
 mysql> SHOW MASTER STATUS;
 +-------------------------+----------+--------------+------------------+
 | File                    | Position | Binlog_Do_DB | Binlog_Ignore_DB |
@@ -5,7 +6,8 @@ mysql> SHOW MASTER STATUS;
 | mysql_binary_log.000004 |      290 |              |                  |
 +-------------------------+----------+--------------+------------------+
 1 row in set (0.00 sec)
-
+```
+```
 mysql> START SLAVE;
 ERROR 1200 (HY000): The server is not configured as slave; fix in config file or with CHANGE MASTER TO
 mysql> CHANGE MASTER TO MASTER_HOST='ec2-52-43-127-254.us-west-2.compute.amazonaws.com', MASTER_USER='root', MASTER_PASSWORD='', MASTER_LOG_FILE='mysql_binary_log.000004', MASTER_LOG_POS=290;
@@ -13,7 +15,8 @@ Query OK, 0 rows affected (0.01 sec)
 
 mysql> START SLAVE;
 Query OK, 0 rows affected (0.00 sec)
-
+```
+```
 mysql> SHOW SLAVE STATUS \G
 *************************** 1. row ***************************
                Slave_IO_State: Connecting to master
@@ -59,3 +62,4 @@ Master_SSL_Verify_Server_Cert: No
 1 row in set (0.00 sec)
 
 mysql>
+```

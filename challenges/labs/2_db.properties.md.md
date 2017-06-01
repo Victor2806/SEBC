@@ -1,3 +1,4 @@
+```
 [root@ip-172-31-12-156 yum.repos.d]# find / -name 2_db.properties
 ^[[A[root@ip-172-31-12-156 yum.repos.d]# find / -name db.properties
 /etc/cloudera-scm-server/db.properties
@@ -14,3 +15,4 @@ com.cloudera.cmf.db.user=scm
 com.cloudera.cmf.db.setupType=EXTERNAL
 com.cloudera.cmf.db.password=scm
 [root@ip-172-31-12-156 yum.repos.d]#
+```

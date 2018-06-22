@@ -1,15 +1,16 @@
 HTTP request sent, awaiting response... 200 OK
 Length: 273
-Saving to: ìcloudera-manager.repoî
+Saving to: ‚Äúcloudera-manager.repo‚Äù
 
 100%[==============================================================================================================================>] 273         --.-K/s   in 0s
 
-2017-05-05 00:21:01 (30.8 MB/s) - ìcloudera-manager.repoî saved [273/273]
+2017-05-05 00:21:01 (30.8 MB/s) - ‚Äúcloudera-manager.repo‚Äù saved [273/273]
 
 [root@ip-172-31-12-156 ~]# cp cloudera-manager.repo /etc/yum.repos.d/
 cp: overwrite `/etc/yum.repos.d/cloudera-manager.repo'? n
 [root@ip-172-31-12-156 ~]# cd /etc/yum.repos.d/
 [root@ip-172-31-12-156 yum.repos.d]# ls -lt r| tail
+echo " file load in progress 
 ls: cannot access r: No such file or directory
 [root@ip-172-31-12-156 yum.repos.d]# ls -ltr
 total 36

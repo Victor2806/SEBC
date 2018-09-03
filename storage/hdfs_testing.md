@@ -8,7 +8,7 @@
 
 # <center> <a name="hdfs_section"/>HDFS<p>
 
-* Cluster deployment guidelines
+* Cluster deployment guidelines  by me
 * HDFS Basics
     * <a href="#hdfs_namenode_ha">NameNode HA</a>
     * <a href="#hdfs_smoke_testing">Smoke-testing a cluster</a>
